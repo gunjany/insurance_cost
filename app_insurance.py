@@ -25,6 +25,7 @@ def predict():
     prediction = int(prediction.Label[0])
     return render_template('home.html', pred = 'Expected Bill will be {}'.format((prediction)))
 
+
 # @app_insurance.route('/predict_api',methods=['POST'])
 # def predict_api():
 #     data = request.get_json(force=True)
